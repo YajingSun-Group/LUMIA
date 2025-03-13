@@ -1,0 +1,18 @@
+# config.yaml
+mcts:
+  iterations: 2000
+  min_visits: 2
+  max_substructure_size: 20
+  min_substructure_size: 2
+  reward_weights:
+    base: 1.0
+    size: 0.1
+    connectivity: 0.3
+
+parallel:
+  batch_size: 50
+  num_cores: 4
+
+output:
+  base_dir: "./results"
+  debug: true
