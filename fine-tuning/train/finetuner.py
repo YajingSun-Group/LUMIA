@@ -241,7 +241,7 @@ class Finetuner(object):
             self.writer.add_scalar('valid_loss', valid_loss, global_step=epoch_counter)
             self.writer.add_scalar('test_loss', test_loss, global_step=epoch_counter)
             
-            early_stop = stopper.step(test_scores[self.args.early_stopping_metric], self.model)
+            early_stop = stopper.step(valid_scores[self.args.early_stopping_metric], self.model)
             
             if early_stop:
                 self.logger.info("Early stopping triggered.")
