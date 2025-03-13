@@ -1,0 +1,9 @@
+{
+    "ffn_hidden_feats": 256,
+    "mpnn_node_feats": 77,
+    "mpnn_hidden_feats": [300, 300, 300],
+    "edge_hidden_feats": 64,
+    "dropout": 0.1,
+    "ffn_dropout": 0.1,
+    "classification": false
+}   

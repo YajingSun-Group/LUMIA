@@ -1,0 +1,7 @@
+{
+    "ffn_hidden_feats": 256,
+    "gcn_hidden_feats": [77, 300, 300, 300],
+    "gcn_dropout": 0.1,
+    "ffn_dropout": 0.1,
+    "classification": false
+}

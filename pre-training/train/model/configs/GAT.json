@@ -1,0 +1,9 @@
+{
+    "ffn_hidden_feats": 256,
+    "gat_hidden_feats": [77, 300, 300, 300],
+    "num_heads": 4,
+    "feat_drop": 0.1,
+    "attn_drop": 0.1,
+    "ffn_dropout": 0.1,
+    "classification": false
+} 
