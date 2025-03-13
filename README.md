@@ -60,7 +60,7 @@ conda env create -f requirements.yaml
 ```
 
 ### Datasets and Pretrained Model Weights
-We have provided the pre-training dataset, fine-tuning dataset with pre-calculated descriptors and pre-trained model weights in the Zenodo repository [here](https://doi.org/10.5281/zenodo.100000000). Download the dataset and put it in the `./dataset` folder. Download the pre-trained model weights and put it in the `./pre-training/dumped` folder.
+We have provided the pre-training dataset, fine-tuning dataset with pre-calculated descriptors and pre-trained model weights in the Zenodo repository [here](https://doi.org/10.5281/zenodo.15020984). Download the dataset and put it in the `./dataset` folder. Download the pre-trained model weights and put it in the `./pre-training/dumped` folder.
 
 ## Fine-tuning
 Now you can fine-tune the pre-trained model on your own dataset.  An example for reproducing the results in the paper is shown below:
