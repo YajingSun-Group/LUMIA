@@ -1,0 +1,24 @@
+python finetune.py \
+    --device cuda:0 \
+    --seed 2034 \
+    --dump_path ./dumped \
+    --exp_name finetune-ocelot-no-embed \
+    --exp_id cross_validation_1 \
+    --log_every_n_steps 10 \
+    --eval_every_n_epochs 1 \
+    --batch_size 256 \
+    --epochs 2000 \
+    --lr 0.0001 \
+    --weight_decay 0.00001 \
+    --early_stopping_metric mae \
+    --patience 40 \
+    --disable_tqdm False \
+    --normalize True \
+    --data_path ../dataset/finetune/ocelot/5_fold_cross_validation/cv_split/cross_validation_1/hr.csv \
+    --additional_features ../dataset/finetune/ocelot/ocelot_descriptors_processed.csv \
+    --task regression \
+    --num_workers 4 \
+    --split_type pre-define \
+    --valid_size 0.2 \
+    --fine_tune_from ../pre-training/dumped/1205-pretrain-full/encoder-RGCN \
+    --embed_molecular_features False      

@@ -1,0 +1,26 @@
+
+python project.py \
+    --device cuda:1 \
+    --seed 2034 \
+    --dump_path ./dumped \
+    --exp_name project \
+    --exp_id project-0831 \
+    --log_every_n_steps 10 \
+    --eval_every_n_epochs 1 \
+    --batch_size 256 \
+    --epochs 2000 \
+    --lr 0.0001 \
+    --weight_decay 0.00001 \
+    --early_stopping_metric mae \
+    --patience 40 \
+    --disable_tqdm False \
+    --normalize True \
+    --data_path /home/qianzhang/MyProject/project2/pretrain/dataset/zinc15-conjugate-1.4M/top10_similar_smiles.csv \
+    --task multi-task-regression \
+    --num_workers 4 \
+    --split_type random \
+    --valid_size 0.2 \
+    --fine_tune_from /home/qianzhang/MyProject/project2/pretrain/dumped/0831-Pretrain-1M/0 \
+    --embed_molecular_features False\
+    --bond_featurizer rgcnetype \
+    --atom_featurizer canonical 
