@@ -1,0 +1,7 @@
+{
+    "ffn_hidden_feats":256,
+    "rgcn_node_feats":77,
+    "rgcn_hidden_feats": [300,300,300],
+    "rgcn_drop_out": 0.1
+
+}
